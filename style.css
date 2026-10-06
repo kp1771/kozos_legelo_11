@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 800px;
+}
+nav{
+    flex: 1 1 100%;
+    border: solid black 2px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    border: solid black 2px;
+}
+.kartya1{
+    flex: 1 1 70%;
+    border: solid grey 2px;
+}
+.kartya2{
+    flex: 1 1 30%;
+    border: solid grey 2px;
+}
+article{
+    flex: 1 1 70%;
+    border: solid black 2px;
+}
+aside{
+    flex: 1 1 30%;
+    border: solid black 2px;
+}
+footer{
+    flex: 1 1 100%;
+    border: solid black 2px;
+}

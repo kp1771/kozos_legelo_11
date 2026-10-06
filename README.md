@@ -1,4 +1,4 @@
-# A KÖZÖS LEGELŐ 
+# A KÖZÖS LEGELŐ
 
 ## Feladatkiírás
 
@@ -11,12 +11,13 @@
 
 Az oldalak a felső navigációval és az alsó gombokkal járhatók végig.
 
-Minden elrendezéshez **Flexboxot** használj! 
+Minden elrendezéshez **Flexboxot** használj!
 
 A tehenek saját SVG-rajzból jelennek meg.
 JavaScript és külső könyvtár nincs.
 
 ### Oldalak
+
 1. index.html – 9 gazda, 9 tehén, napi 10 liter/tehén.
 2. dontes.html – az egyik gazda második tehenet vesz; 10 tehén, napi 9 liter/tehén.
 3. kovetkezmeny.html – mindegyik gazda második tehenet vesz; 18 tehén, napi 1 liter/tehén.
@@ -29,18 +30,17 @@ JavaScript és külső könyvtár nincs.
 A megadott színektől eltérhetsz, de css változókat használj!
 
 :root {
-  --ink: #24372d;
-  --green: #2c6e50;
-  --dark: #174b38;
-  --mint: #e8f3df;
-  --cream: #f7f7ee;
-  --line: #d6e1d1;
-  --orange: #d77939;
-  --white: #fff;
+--ink: #24372d;
+--green: #2c6e50;
+--dark: #174b38;
+--mint: #e8f3df;
+--cream: #f7f7ee;
+--line: #d6e1d1;
+--orange: #d77939;
+--white: #fff;
 }
 
 Betűtípus: "Segoe UI"
-
 
 ### Űrlap
 
@@ -55,8 +55,6 @@ Haladó CSS-animáció: az első három HTML-fájl head részében a halado_anim
 link soráról távolítsd el a <!-- és --> jelölést. A reduced motion rendszerbeállítást
 tiszteletben tartja. Bővítésként a tanulók külön késleltetést adhatnak a teheneknek
 az egyedi --i változóval, vagy megváltoztathatják a kiemelt tehenek mozgását.
-
-
 
 **Forrás:** Zöld Föld, szakképzés 9–10. évfolyam, 12–13. oldal. A webes szöveg
 a tankönyvi példát saját szavakkal dolgozza fel.

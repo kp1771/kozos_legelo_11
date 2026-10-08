@@ -1,40 +1,342 @@
-*{
-    box-sizing: border-box;
+/* A te általad megadott színváltozók */
+:root {
+    --ink: #24372d;
+    --green: #2c6e50;
+    --dark: #174b38;
+    --mint: #e8f3df;
+    --cream: #f7f7ee;
+    --line: #d6e1d1;
+    --orange: #d77939;
+    --white: #ffffff;
 }
-main{
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--ink);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 0;
+}
+
+main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-    width: 800px;
+    width: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-nav{
-    flex: 1 1 100%;
-    border: solid black 2px;
-}
-header{
+
+header {
     display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.hkartyak {
+    display: flex;
+}
+
+.hkartya1 {
+    flex: 1 1 70%;
+    margin: 5px;
+}
+
+.hkartya1 p.alcim {
+    color: #9eb883;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hkartya1 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hkartya1 p {
+    color: #e0e8db;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.hkartya2 {
+    flex: 1 1 30%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    align-items: center;
+    margin: 5px;
+    padding: 20px;
+    text-align: left;
+}
+
+.hkartya2 h3,
+.hkartya2 h2 {
+    color: #a4d291;
+    font-size: 1.6rem;
+}
+
+.hkartya2 p {
+    font-size: 0.8rem;
+    color: var(--cream);
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: space-evenly;
+    margin: 5px 0 15px 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--ink);
+}
+
+.menupont1 {
+    background-color: #d1e6b2;
+    color: var(--dark);
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.menupont2,
+.menupont3 {
+    background-color: #e5ecd8;
+    color: var(--ink);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+article h3 {
+    font-size: 1.3rem;
+    color: var(--ink);
+    margin-bottom: 8px;
+}
+
+article p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.artkartyak {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.artkartya {
+    flex: 1 1 30%;
+    padding: 15px;
+    background-color: #f1f5e9;
+    margin: 5px;
+    border-radius: 12px;
+}
+
+article {
+
+    flex: 0 0 calc(70% - 10px);
+    background-color: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 5px;
+}
+
+aside {
+    flex: 0 0 calc(30% - 10px);
+    background-color: #e8f3df;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.artkartya h4 {
+    font-size: 1.3rem;
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.artkartya p {
+    font-size: 0.75rem;
+    color: #444;
+}
+
+.artp {
+    border-left: 4px solid var(--orange);
+    background-color: #fff8f0;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.artp p {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+
+
+aside h3 {
+    font-size: 1rem;
+    color: var(--ink);
+    margin-bottom: 15px;
+}
+
+.askartyak {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex: 1 1 100%;
-    border: solid black 2px;
 }
-.kartya1{
-    flex: 1 1 70%;
-    border: solid grey 2px;
-}
-.kartya2{
+
+.askartya {
     flex: 1 1 30%;
-    border: solid grey 2px;
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    border-left: #4a7c59 4px solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
 }
-article{
-    flex: 1 1 70%;
-    border: solid black 2px;
+
+.askartya p {
+    font-size: 0.85rem;
+    color: #444;
 }
-aside{
-    flex: 1 1 30%;
-    border: solid black 2px;
-}
-footer{
+
+footer {
     flex: 1 1 100%;
-    border: solid black 2px;
+    margin-top: 20px;
+}
+
+.fkartyak {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fkartya1 {
+    flex: 1 1 70%;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 10px;
+    text-align: left;
+    color: #777;
+    font-size: 0.8rem;
+}
+
+.fkartya2 {
+    flex: 1 1 30%;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.legelo-mezo {
+    background-color: #a2c579;
+    border-radius: 15px;
+    padding: 30px 20px 20px 20px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tehenek-felsosor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tehenek-alsosor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.legelo-mezo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 0;
+    margin: 0;
+}
+
+.fkartya2 a {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+
+
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    article,
+    aside {
+        flex: 1 1 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+
+    .artkartyak {
+        flex-direction: column;
+    }
+
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .menupont1,
+    .menupont2,
+    .menupont3 {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hkartyak {
+        flex-direction: column;
+    }
 }
